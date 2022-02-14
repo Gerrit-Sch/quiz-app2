@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 48px, auto, 48px;
+  height: 100vh;
+  font-family: Poppins;
+}
