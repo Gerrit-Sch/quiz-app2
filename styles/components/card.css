@@ -1,0 +1,26 @@
+.card {
+  background-color: beige;
+  height: 300px;
+  border: 1px black solid;
+  border-radius: 16px;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.card__content {
+  margin: 15px;
+}
+
+.list-of-answers {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+.answer-items {
+  border: 1px black solid;
+  padding: 2px 4px 2px 4px;
+  border-radius: 4px;
+  background-color: lightgrey;
+  margin-bottom: 24px;
+}
