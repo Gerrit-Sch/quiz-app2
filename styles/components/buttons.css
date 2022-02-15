@@ -1,0 +1,18 @@
+.answer-button {
+  padding: 24x;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 18px;
+}
+
+.button__center {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__buttons {
+  height: 60px;
+  width: 60px;
+  border: transparent;
+  border-radius: 50px;
+}
