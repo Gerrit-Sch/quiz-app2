@@ -8,7 +8,8 @@
     "dev": "npx live-server .",
     "prettier:write": "npx prettier --write .",
     "prettier:check": "npx prettier --check .",
-    "eslint:check": "npx eslint ."
+    "eslint:check": "npx eslint .",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -21,11 +22,12 @@
   },
   "homepage": "https://github.com/Gerrit-Sch/quiz-app2#readme",
   "dependencies": {
-    "prettier": "^2.5.1",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "prettier": "^2.5.1"
   },
   "devDependencies": {
     "eslint": "^8.9.0",
-    "eslint-config-prettier": "^8.3.0"
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.4"
   }
 }
