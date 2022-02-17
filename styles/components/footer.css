@@ -1,32 +1,8 @@
-nv {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  font-size: 4rem;
-  justify-content: space-around;
-  list-style: none;
-  position: fixed;
-
-  margin: 0;
-  padding: 0;
-  background-color: blueviolet;
-  color: black;
-}
-
 .nav {
   display: flex;
   flex-direction: row;
-  list-style: none;
   justify-content: space-around;
-  padding: 0;
+  padding: 10px;
   align-items: center;
-  margin-bottom: 50px;
   font-size: 2rem;
-}
-
-.b-r-grey {
-  flex: auto;
-  text-align: center;
-  border: 1px solid grey;
-  border-top: 0;
 }

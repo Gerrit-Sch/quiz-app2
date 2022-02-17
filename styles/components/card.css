@@ -1,6 +1,6 @@
 .card {
   background-color: beige;
-  height: 300px;
+  height: auto;
   border: 1px black solid;
   border-radius: 16px;
   margin-bottom: 35px;
@@ -8,7 +8,8 @@
 }
 
 .card__content {
-  margin: 15px;
+ margin: 15px;
+ 
 }
 
 .list-of-answers {
@@ -16,6 +17,7 @@
   justify-content: space-around;
   list-style: none;
   padding: 0;
+  
 }
 .answer-items {
   border: 1px black solid;
