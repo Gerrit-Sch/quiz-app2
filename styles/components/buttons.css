@@ -10,9 +10,11 @@
   justify-content: center;
 }
 
-.footer__buttons {
-  height: 60px;
-  width: 60px;
-  border: transparent;
-  border-radius: 50px;
+.active {
+  background-color: aqua;
+}
+
+.bookmark__button {
+  border: 0;
+  background: transparent;
 }
