@@ -1,7 +1,9 @@
-/*const answerButton = document.querySelector(['data-js=answer-button']);
+import navigation from './JS/navigation';
+import bookmarkToggle from './JS/bookmarks';
+import answerCards from './JS/answerCards';
+import characterCount from './JS/characterCount';
 
-answerButton.addEventListener('click', () => {
-  answerButton.classList.add('active');
-});*/
-
-console.log('hello world');
+navigation();
+bookmarkToggle();
+answerCards();
+characterCount();

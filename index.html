@@ -14,83 +14,85 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <script defer src="./index.js"></script>
-
+    <script type="module" defer src="index.js"></script>
     <title>Home</title>
   </head>
   <body>
-    <header>
-      <h1>QUIZ-APP</h1>
-    </header>
+    
 
-    <main>
+    <main class="hidden" data-js="home">
+      <header class="header">
+        <h1>QUIZ-APP</h1>
+      </header>
       <section class="card">
-        <div class="card__content">
-          <h2>Question:</h2>
+        <h2>Question:</h2>
 
-          <button class="bookmark-position bookmark__button">
-            <img
-              src="./images/icons8-bookmark-50.png"
-              alt="bookmark"
-              width="40px"
-              height="35px"
-            />
+      <button  class="bookmark__button bookmark-position" data-js="bookmark-toggle"
+      aria-label="bookmark" type="button">
+          <img 
+            src="./images/icons8-bookmark-50.png"
+            alt="bookmark"
+            width="40px"
+            height="35px"
+          />
+        </button>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Q uod et
+          corporis nam doloribus blanditiis adipisci natus simililorem?
+        </p>
+
+        <div class="button__center">
+          <button data-js="answer-button" class="answer-button" type="button">
+            SHOW ANSWER
           </button>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Q uod et
-            corporis nam doloribus blanditiis adipisci natus simililorem?
-          </p>
-
-          <div class="button__center">
-            <button data-js="answer-button" class="answer-button">
-              SHOW ANSWER
-            </button>
-          </div>
-
-          <ul class="list-of-answers">
-            <li class="answer-items">Answer1</li>
-            <li class="answer-items">Answer2</li>
-            <li class="answer-items">Answer3</li>
-            <li class="answer-items">Answer4</li>
-          </ul>
         </div>
+
+        <div class="hidden" data-js="answer-text">
+          <h2>Answer:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+
+
+        <ul class="list-of-answers">
+          <li class="answer-items">Answer1</li>
+          <li class="answer-items">Answer2</li>
+          <li class="answer-items">Answer3</li>
+          <li class="answer-items">Answer4</li>
+        </ul>
       </section>
 
       <section class="card">
-        <div class="card__content">
-          <h2>Question:</h2>
+        <h2>Question:</h2>
 
-          <button class="bookmark-position bookmark__button">
-            <img
-              src="./images/icons8-bookmark-50.png"
-              alt="bookmark"
-              width="40px"
-              height="35px"
-            />
+        <button class="bookmark-position bookmark__button">
+          <img
+            src="./images/icons8-bookmark-50.png"
+            alt="bookmark"
+            width="40px"
+            height="35px"
+          />
+        </button>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Q uod et
+          corporis nam doloribus blanditiis adipisci natus simililorem?
+        </p>
+
+        <div class="button__center">
+          <button data-js="answer-button" class="answer-button">
+            SHOW ANSWER
           </button>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Q uod et
-            corporis nam doloribus blanditiis adipisci natus simililorem?
-          </p>
-
-          <div class="button__center">
-            <button data-js="answer-button" class="answer-button">
-              SHOW ANSWER
-            </button>
-          </div>
-
-          <ul class="list-of-answers">
-            <li class="answer-items">Answer1</li>
-            <li class="answer-items">Answer2</li>
-            <li class="answer-items">Answer3</li>
-            <li class="answer-items">Answer4</li>
-          </ul>
         </div>
+
+        <ul class="list-of-answers">
+          <li class="answer-items">Answer1</li>
+          <li class="answer-items">Answer2</li>
+          <li class="answer-items">Answer3</li>
+          <li class="answer-items">Answer4</li>
+        </ul>
       </section>
       <section class="card">
-        <div class="card__content"></div>
         <h2>Question:</h2>
 
         <button class="bookmark-position bookmark__button">
@@ -121,13 +123,189 @@
       </section>
     </main>
 
+    
+    
+    <main class="hidden" data-js="create"> 
+      <header class="header">
+        <h1>CREATE</h1>
+      </header>
+      <article class="card">
+        <form action="#">
+        <label for="question-input"> 
+          <p>Question:</p><small>(<span data-js="create-amount-add-question">300 </span> characters
+            left)</small></label>
+        <textarea class="col-centered" data-js="text-addquestion"
+
+          required
+          cols="75"
+          rows="4"
+          maxlength="300"
+          name="question"
+          id="question-input"
+          placeholder="Please type in a Question!">
+      </textarea>
+      </form>
+      </article> 
+
+    <article class="card">
+
+      <form  action="#">
+        <label for="answer-input"><p>Answer:</p></label>
+      <textarea class="col-centered" data-js="text-addanswer"
+      required
+      cols="75"
+      rows="4"
+      maxlength="350"
+      name="answer"
+      id="question-input"
+      placeholder="Please type in an Answer!"></textarea>
+    </article>
+
+    <section class="card">
+
+      <form  action="#">
+        <label for="tags-input"><p>Input tags:</p></label>
+      <textarea class="col-centered"
+      required
+      cols="75"
+      rows="4"
+      name="tags"
+      id="question-input"
+      placeholder="Please input tags!"></textarea>
+      </section>
+  <div class="button__center">   
+<button aria-label="Submit created question" >Submit</button></div>
+      
+    </main>
+
+    
+
+    
+
+    <main class="hidden" data-js="bookmarks">
+      <header class="header"><h1>BOOKMARKS</h1></header>
+      <section class="card">
+        <div class="card__content">
+          <h2>Question:</h2>
+
+          <button class="bookmark-position bookmark__button">
+            <img
+              src="./images/icons8-bookmark-50.png"
+              alt="bookmark"
+              width="40px"
+              height="35px"
+            />
+          </button>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Q uod et
+            corporis nam doloribus blanditiis adipisci natus simililorem?
+          </p>
+
+          <div class="button__center">
+            <button data-js="answer-button" class="answer-button">
+              SHOW ANSWER
+            </button>
+          </div>
+
+          <ul class="list-of-answers">
+            <li class="answer-items">Answer1</li>
+            <li class="answer-items">Answer2</li>
+            <li class="answer-items">Answer3</li>
+            <li class="answer-items">Answer4</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card__content">
+          <h2>Question:</h2>
+
+          <button class="bookmark-position bookmark__button">
+            <img
+              src="./images/icons8-bookmark-50.png"
+              alt="bookmark"
+              width="40px"
+              height="35px"
+            />
+          </button>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Q uod et
+            corporis nam doloribus blanditiis adipisci natus simililorem?
+          </p>
+
+          <div class="button__center">
+            <button data-js="answer-button" class="answer-button">
+              SHOW ANSWER
+            </button>
+          </div>
+
+          
+          <ul class="list-of-answers">
+            <li class="answer-items">Answer1</li>
+            <li class="answer-items">Answer2</li>
+            <li class="answer-items">Answer3</li>
+            <li class="answer-items">Answer4</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    
+   
+
+    <main class="hidden" data-js="profile">
+      <header class="header"><h1>PROFILE</h1>
+      </header>
+      <article class="card card__profile">
+        <img
+          src="https://source.unsplash.com/100x100/?portraitmen"
+          class="profile-picture"
+          alt="profile picture"
+          width="200"
+          height="200"
+        />
+        <span>My Super Profile</span>
+      </article>
+
+      <article class="card">
+        <form  action="#">
+          <label for="about-me"><p>About me:</p></label>
+        <textarea 
+        required
+        cols="75"
+        rows="4"
+        name="about-me"
+        id="about-me"
+        placeholder="Talk about stuff you like!"></textarea>
+        </form>
+      </article>
+      
+
+      <section class="card">
+        <form  action="#">
+          <label for="skills"></label><p>Skills:</p></label>
+        <textarea 
+        required
+        cols="75"
+        rows="4"
+        name="skills"
+        id="skills"
+        placeholder="Do you have awesome skills?"></textarea>
+      </section>
+    
+  <div class="button__center"><button> Logout</button></div>
+    </main>
+
     <footer>
       <nav class="nav">
-        <a href="./bookmarks.html"> <i class="fa fa-bookmark"></i></a>
-        <a href="./create.html"> <i class="fa fa-pen"></i></a>
-        <a href="./profile.html"> <i class="fa fa-user"></i></a>
-        <a href="./home.html"> <i class="fa fa-home"></i></a>
+        <a href="./bookmarks.html"><button data-nav="home"> <i class="fa fa-bookmark"></i></button></a>
+        <a href="./create.html"> <button data-nav="bookmarks"> <i class="fa fa-pen"></i></button></a>
+        <a href="./profile.html"><button data-nav="create"><i class="fa fa-user"></i></button></a>
+        <a href="./home.html"><button data-nav="profile"><i class="fa fa-home"></i></button> </a>
       </nav>
     </footer>
+ 
   </body>
 </html>
