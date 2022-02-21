@@ -4,11 +4,14 @@
   border: 1px black solid;
   border-radius: 16px;
   margin-bottom: 35px;
+  padding: 0 20px 10px 20px;
   position: relative;
 }
 
-.card__content {
-  margin: 15px;
+.card__profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .list-of-answers {
@@ -23,4 +26,9 @@
   border-radius: 4px;
   background-color: lightgrey;
   margin-bottom: 24px;
+}
+
+.col-centered {
+  margin: 0 auto;
+  float: none;
 }

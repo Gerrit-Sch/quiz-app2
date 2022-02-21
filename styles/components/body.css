@@ -3,10 +3,11 @@
   font-family: Poppins;
 }
 
-body {
+/*body {
   display: grid;
-  grid-template-rows: 48px auto 60px;
+  grid-template-rows: auto 60px;
   height: 100vh;
   font-family: Poppins;
   margin: 0;
 }
+*/

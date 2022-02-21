@@ -10,11 +10,10 @@
   justify-content: center;
 }
 
-.active {
-  background-color: aqua;
-}
-
 .bookmark__button {
-  border: 0;
   background: transparent;
+  position: absolute;
+  top: -10px;
+  right: 25px;
+  border: 0;
 }
